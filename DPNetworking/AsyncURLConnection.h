@@ -45,7 +45,7 @@ typedef void (^errorBlock_t)(NSError *error);
 - (id)requestUrl:(NSString *)requestUrl httpHeaders:(NSDictionary *)httpHeaders completeBlock:(completeBlock_t)aCompleteBlock errorBlock:(errorBlock_t)anErrorBlock;
 
 // using Basic Auth
-- (id)requestUrl:(NSString *)requestUrl userName:(NSString *)userName userPassword:(NSString *) userPassword httpHeaders:(NSDictionary *)httpHeaders completeBlock:(completeBlock_t)aCompleteBlock errorBlock:(errorBlock_t)anErrorBlock;
+- (id)requestUrl:(NSString *)requestUrl userName:(NSString *)userName userPassword:(NSString *)userPassword httpHeaders:(NSDictionary *)httpHeaders completeBlock:(completeBlock_t)aCompleteBlock errorBlock:(errorBlock_t)anErrorBlock;
 
 // with httpMethod - @"GET", @"POST" etc
 - (id)requestUrl:(NSString *)requestUrl httpMethod:(NSString *)httpMethod bodyText:(NSString *)bodyText httpHeaders:(NSDictionary *)httpHeaders completeBlock:(completeBlock_t)aCompleteBlock errorBlock:(errorBlock_t)anErrorBlock;
